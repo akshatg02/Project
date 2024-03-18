@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<head>
+  <title>
+    Project
+  </title>
+</head>
+<body>
+   <input type="text" id="input" placeholder="Enter Data"/>
+  <button id="addData" onclick('addData()')>Add Data </button>
+<script src="server.js"></script>
+</body>
+</html>

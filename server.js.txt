@@ -1,0 +1,33 @@
+const input = document.getElementById('input');
+const add = document.getElementById('addData');
+let is_success = false
+const arr = [];
+function addData() {
+    const val = input.value;
+  add.addEventListener('click',()=>{
+    arr.push(stringify(val));
+    is_success = true;
+  })
+  response();
+}
+let odd_numbers = []
+let even_numbers = []
+function response() {
+  for(let i = 0; i < arr.length; i++) {
+    let num = parseInt(arr[i]);
+    if(num && arr[i]%2 == 0){
+      even_numbers.push(arr[i]);
+    }
+    else if(num && arr[i]%2 != 0) {
+      odd_numbers.push(arr[i]);
+    }
+  }
+  alert(`is_success: ${is_success}
+  "user_id": "john_doe_17091999"
+  “email” : “john@xyz.com”,
+  “roll_number”:”ABCD123”,
+  "odd_numbers":${odd_numbers},
+  "even_numbers":${even_numbers}
+  `);
+  
+}
